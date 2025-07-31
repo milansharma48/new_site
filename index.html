@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect247 - 24/7 WhatsApp Medical Consultation & Medicine Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a7d9b5; /* Soft green */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #89c09c; /* Darker soft green */
+        }
+
+        /* Glassmorphism effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sticky CTA for mobile */
+        @media (max-width: 768px) {
+            .sticky-cta-mobile {
+                position: fixed;
+                bottom: 1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1000;
+                width: calc(100% - 2rem); /* Full width with some padding */
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gradient-to-br from-blue-50 to-green-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 hover:text-blue-900 transition duration-300">MediConnect247</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 transition duration-300">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-700 transition duration-300">Features</a>
+                <a href="#workflow" class="text-gray-600 hover:text-blue-700 transition duration-300">Workflow</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-700 transition duration-300">Benefits</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition duration-300">Contact</a>
+            </div>
+            <a href=" https://wa.me/919770428444 " class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 hidden md:block">
+                Chat Now on WhatsApp
+            </a>
+            <button class="md:hidden text-gray-600 hover:text-blue-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div class="md:hidden bg-white shadow-lg py-4 transition-all duration-300 hidden">
+            <div class="flex flex-col items-center space-y-4">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 transition duration-300 w-full text-center py-2">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-700 transition duration-300 w-full text-center py-2">Features</a>
+                <a href="#workflow" class="text-gray-600 hover:text-blue-700 transition duration-300 w-full text-center py-2">Workflow</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-700 transition duration-300 w-full text-center py-2">Benefits</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition duration-300 w-full text-center py-2">Contact</a>
+                <a href=" https://wa.me/919770428444" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 w-fit">
+                    Chat Now on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <a href=" https://wa.me/919770428444" class="sticky-cta-mobile bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full shadow-xl transform hover:scale-105 transition duration-300 text-center md:hidden">
+        Chat Now on WhatsApp
+    </a>
+
+    <section id="home" class="relative bg-gradient-to-r from-blue-100 to-green-100 py-16 md:py-24 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-800 leading-tight mb-6">
+                    Your Health, Anytime, Anywhere with <span class="text-green-600">MediConnect24/7</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">
+                    Instant medical consultations and reliable medicine delivery via WhatsApp, 24/7. Your trusted healthcare partner in India.
+                </p>
+                <a href="https://wa.me/919770428444 " class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 text-lg">
+                    Start Your Consultation Now
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img src="images/Vc-Home-page-imgnew-min-min.png" alt="Doctor talking to patient on video call" class="rounded-3xl shadow-xl transform hover:scale-105 transition duration-500 max-w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-10 border-gray-200">
+
+    <section id="features" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-12">How MediConnect247 Empowers You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.49_e8a4468d.jpg" alt="Doctor icon" class="w-24 h-24 mb-6 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">24/7 Doctor Consultations</h3>
+                    <p class="text-gray-700 leading-relaxed">Connect with certified doctors anytime, anywhere, directly through WhatsApp. Get expert medical advice instantly.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.48_0574bde3.jpg" alt="Medicine icon" class="w-24 h-24 mb-6 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Doorstep Medicine Delivery</h3>
+                    <p class="text-gray-700 leading-relaxed">Order your prescribed medicines and get them delivered swiftly to your home, ensuring convenience and peace of mind.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.49_e0f6a630.jpg" alt="Chatbot icon" class="w-24 h-24 mb-6 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Smart AI Assistant</h3>
+                    <p class="text-gray-700 leading-relaxed">Our intelligent chatbot provides quick answers to common health queries and guides you through the process. (TODO: Integrate Chatbot)</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.48_2f25d17b.jpg" alt="Prescription icon" class="w-24 h-24 mb-6 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Secure Prescription Handling</h3>
+                    <p class="text-gray-700 leading-relaxed">Safely share and manage your digital prescriptions for seamless medicine procurement.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.50_eb05fded.jpg" alt="Lab Test icon" class="w-24 h-24 mb-6 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Easy Lab Test Booking</h3>
+                    <p class="text-gray-700 leading-relaxed">Book various lab tests from the comfort of your home, with reports delivered digitally.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.49_0b3a367e.jpg" alt="Health Records icon" class="w-24 h-24 mb-6 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Personal Health Records</h3>
+                    <p class="text-gray-700 leading-relaxed">Maintain all your health records securely in one place for easy access and doctor review.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-10 border-gray-200">
+
+    <section id="workflow" class="py-16 md:py-20 bg-gradient-to-l from-white to-blue-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-12">Our Simple 3-Step Workflow</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="images/ChatGPT Image Jul 30, 2025, 09_54_52 AM.png" alt="Medical Workflow Infographic" class="rounded-3xl shadow-xl transform hover:scale-105 transition duration-500 max-w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-left space-y-8">
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">1. Connect on WhatsApp</h3>
+                        <p class="text-gray-700">Simply click our "Chat Now" button to initiate a conversation with MediConnect247 on WhatsApp.</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-l-4 border-green-500">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-3">2. Consult & Prescribe</h3>
+                        <p class="text-gray-700">Describe your symptoms to our AI assistant or connect with a doctor. Get a digital prescription if needed.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">3. Deliver & Heal</h3>
+                        <p class="text-gray-700">Confirm your medicine order. We'll deliver it to your doorstep, helping you get better faster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-10 border-gray-200">
+
+    <section id="benefits" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-12">Why Choose MediConnect247?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-left space-y-6">
+                    <div class="flex items-start bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                        <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-700 mb-2">Unmatched Convenience</h3>
+                            <p class="text-gray-700">Access healthcare from the comfort of your home, avoiding long queues and travel.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-green-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                        <svg class="w-8 h-8 text-blue-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.593 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.593-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">Cost-Effective & Transparent</h3>
+                            <p class="text-gray-700">Save on travel costs and enjoy transparent pricing for consultations and medicines.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                        <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-700 mb-2">Reliable & Secure</h3>
+                            <p class="text-gray-700">Our platform ensures data privacy and connects you with verified healthcare professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/WhatsApp Image 2025-07-27 at 22.59.51_229867fa.jpg" alt="Happy family at home and senior citizens using phone" class="rounded-3xl shadow-xl transform hover:scale-105 transition duration-500 max-w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-10 border-gray-200">
+
+    <section class="bg-gradient-to-r from-blue-700 to-green-600 py-16 text-center text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Seamless Healthcare?</h2>
+            <p class="text-xl md:text-2xl mb-8">Join MediConnect247 and take control of your health today!</p>
+            <a href="https://wa.me/919770428444 " class="inline-block bg-white text-blue-700 hover:bg-gray-100 font-bold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 transition duration-300 text-xl">
+                Chat Now on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="relative bg-gray-900 text-gray-300 py-12">
+        <img src="https://source.unsplash.com/1920x400/?group-of-doctors,medical-team,healthcare-background" alt="Background medical image of doctors" class="absolute inset-0 w-full h-full object-cover opacity-20">
+        <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-2xl font-bold text-white mb-4">MediConnect247</h3>
+                <p>&copy; 2025 MediConnect247. All rights reserved.</p>
+            </div>
+            <div class="mb-8 md:mb-0">
+                <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="#features" class="hover:text-white transition duration-300">Features</a></li>
+                    <li><a href="#workflow" class="hover:text-white transition duration-300">Workflow</a></li>
+                    <li><a href="#benefits" class="hover:text-white transition duration-300">Benefits</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Contact Us</h4>
+                <p class="mb-2">Email: <a href="mailto:team@mediconnect247.com" class="hover:text-white transition duration-300">team@mediconnect247.com</a></p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                    <a href="TODO_SOCIAL_LINK_FACEBOOK" class="text-gray-300 hover:text-white transform hover:scale-110 transition duration-300" aria-label="Facebook">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.247 0-1.646.779-1.646 1.56V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="TODO_SOCIAL_LINK_TWITTER" class="text-gray-300 hover:text-white transform hover:scale-110 transition duration-300" aria-label="Twitter">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.007-.532A8.318 8.318 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.41-4.207 4.108 4.108 0 001.27 5.477A4.072 4.072 0 014 9.407v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                    </a>
+                    <a href="TODO_SOCIAL_LINK_INSTAGRAM" class="text-gray-300 hover:text-white transform hover:scale-110 transition duration-300" aria-label="Instagram">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.792.01 3.249.064.427.054.647.109.88.202.665.234 1.164.683 1.605 1.124.441.441.89 1.0.1124 1.605.093.233.148.453.202.88.054.457.064.818.064 3.25 0 .43.01 2.792-.064 3.249-.054.427-.109.647-.202.88-.234.665-.683 1.164-1.124 1.605-.441-.441-1.0-.89-1.605-1.124-.233-.093-.453-.148-.202-.88-.054-.457-.064-.818-.064-3.25s.01-2.792.064-3.249c.054-.427.109-.647.202-.88.234-.665.683-1.164 1.124-1.605.441-.441 1.0-.89 1.605-1.124.093-.233.148-.453.202-.88.054-.457.064-.818.064-3.25ZM12 7.107c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5ZM12 15.7c-2.035 0-3.7-1.664-3.7-3.7s1.665-3.7 3.7-3.7 3.7 1.664 3.7 3.7-1.665 3.7-3.7 3.7ZM18.442 5.51a1.237 1.237 0 00-1.236-1.236h-.01c-.632.002-1.144.514-1.144 1.146v.01c0 .63.512 1.142 1.144 1.142h.01c.63-.002 1.144-.514 1.144-1.146v-.01Z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky header background change on scroll (optional, but nice touch)
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-95', 'shadow-xl');
+            } else {
+                header.classList.remove('bg-opacity-95', 'shadow-xl');
+            }
+        });
+
+        // Simple Mobile Menu Toggle (Basic JS, can be enhanced)
+        const mobileMenuButton = document.querySelector('header nav button');
+        const mobileMenu = document.querySelector('header > div.md\\:hidden');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
